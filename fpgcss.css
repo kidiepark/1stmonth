@@ -23,3 +23,24 @@ body {
     transition: 1s;
     background-color: #7858c4b4;
 }
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#h11 {
+    animation: fadeIn 0.6s ease-in;
+}
+
+#h33 {
+    animation: fadeIn 0.9s ease-in;
+}
+
+#button {
+    animation: fadeIn 1.2s ease-in;
+}
+
+#h55 {
+    animation: fadeIn 1.5s ease-in;
+}
