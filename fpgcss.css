@@ -1,0 +1,25 @@
+html {
+    background-image: url(images/firstpgbg.jpg);
+}
+
+body {
+    font-family: cursive;
+    font-size: 12px;
+    color: #7858c4b4;
+    text-align: center;
+}
+
+#nxtpg {
+    background-color: #7858c400;
+    color: #7858c4b4;
+    margin: auto;
+    border-radius: 50px;
+    border-color: #7858c400;
+}
+
+#nxtpg:hover {
+    animation: fadeIN ease-in-out;
+    opacity: 50%;
+    transition: 1s;
+    background-color: #7858c4b4;
+}
