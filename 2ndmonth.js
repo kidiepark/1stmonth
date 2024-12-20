@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const button2 = document.getElementById("bt2");
     const hc1 = document.getElementById("hc1");
     const hc2 = document.getElementById("hc2");
-    const editvid = document.getElementById("editvid")
     const button3 = document.getElementById("bt3")
     const button4 = document.getElementById("mainbtn")
     const content = document.getElementById("main")
@@ -22,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hc3 = document.getElementById("hc3")
     const aplay = document.getElementById("vm")
     const hc5 = document.getElementById("hc5")
+    const image = document.getElementById("image1")
     
     const vm = new Audio('audio/shortvm1.m4a')
     const music = new Audio('audio/marcilikeher.mp4')
@@ -43,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     button3.addEventListener("click", function() {
-        editvid.classList.toggle("show");
-        button3.textContent = editvid.classList.contains("show")
-            ?"close"
+        image1.classList.toggle("show");
+        button3.textContent = image1.classList.contains("show")
+            ?"Click the image to redirect to the video"
             :"here's a little and quick montage I lost all the past recordings we had sa old pc ko huhu"
     });
     button4.addEventListener("click", function(){
