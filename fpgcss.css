@@ -45,3 +45,52 @@ body {
 #h55 {
     animation: fadeIn 1.5s ease-in;
 }
+
+nav {
+    position: relative;
+}
+
+.dropdown {
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(166, 84, 243, 0.425);
+    list-style: none;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.dropdown.show {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.dropdown li, h4 {
+    padding: 5px;
+}
+
+.dropdown li a {
+    color: rgb(132, 0, 255);
+    text-decoration: none;
+}
+
+div {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(166, 84, 243, 0.459);
+    margin: 6px;
+}
+
+.nav1 {
+    position: unset;
+}
+
+.nav2 li a{
+    text-decoration: none;
+    list-style: none;
+}

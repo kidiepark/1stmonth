@@ -1,0 +1,224 @@
+html {
+    background-image: url(images/bg3.jpg);
+    font-family: cursive;
+    font-size: 18px;
+    color: rgb(162, 85, 233);
+    text-align: center;
+}
+
+body {
+    overflow-y: auto;
+}
+
+h4 {
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+nav {
+    position: relative;
+}
+
+.dropdown {
+
+    height: auto;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(166, 84, 243, 0.425);
+    list-style: none;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.dropdown.show {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.dropdown li, h4 {
+    padding: 5px;
+    
+}
+
+.dropdown li a {
+    color: rgb(132, 0, 255);
+    text-decoration: none;
+}
+
+div {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(166, 84, 243, 0.459);
+    margin: 6px;
+}
+
+.nav1 {
+    position: unset;
+}
+
+.nav2 li a{
+    text-decoration: none;
+    list-style: none;
+}
+
+#hc1 {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
+}
+
+#hc1.show {
+    opacity: 1;
+    height: auto; 
+    visibility: visible;
+}
+
+#hc2 {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
+}
+
+#hc2.show {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#bt1, #bt2, #bt3, #mainbtn, #bt4, #hc5 {
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: rgb(162, 85, 233);
+    font-family: cursive;
+}
+
+#mainbtn {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#bt1::after, #bt2::after, #bt3::after, #mainbtn::after, #bt4::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: rgba(166, 84, 243, 0.459);
+    transition: width  0.5s ease;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+#bt1:hover::after, #bt2:hover::after, #bt3:hover::after, #mainbtn:hover::after, #bt4:hover::after, #hc5:hover::after {
+    width: 50%;
+}
+
+
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#hc1, #hc2, #hc3 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#bt1, #bt2, #bt3, #mainbtn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#bleh, #kiss {
+    border-radius: 30px;
+}
+
+
+
+#editbtn {
+    position: relative;
+    display: inline-block;
+}
+
+#editvid {
+    width: 100%;
+    border-radius: 30px;
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 05s ease, max-height 0.5s ease, visibility 0.5s ease;
+}
+
+#editvid.show {
+    opacity: 1;
+    height: 300px;
+    visibility: visible;
+}
+
+
+
+#main {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
+    flex-grow: 1;
+}
+
+#main.show {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+}
+
+#hc3 {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
+}
+
+#hc3.show {
+    opacity: 1;
+    height: auto; 
+    visibility: visible;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#hc5.hidden {
+    display: none;
+}
+
+#bt1 {order: 1;}
+#bt2 {order: 2;}
+#bt4 {order: 3;}
+#bt3 {order: 4;}
